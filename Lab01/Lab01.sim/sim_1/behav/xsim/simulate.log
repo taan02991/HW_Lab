@@ -1,0 +1,21 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+time                    0:
+s1 -> x x
+s2 -> x x
+time                10000:
+s1 -> 0 0
+s2 -> x 0
+time                30000:
+s1 -> 0 0
+s2 -> 0 0
+time                50000:
+s1 -> 1 1
+s2 -> 0 1
+time                70000:
+s1 -> 1 1
+s2 -> 1 1
+time                90000:
+s1 -> 0 0
+s2 -> 1 0
+$finish called at time : 100 ns : File "C:/Users/Taan/XilinxProjects/Lab01/Lab01.srcs/sim_1/new/testShift.v" Line 51
