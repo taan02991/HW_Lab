@@ -42,7 +42,7 @@ wire[6:0] segments;
 assign seg = segments;
 
 segmentDecoder segDecode(segments, hexIn);
-assign dp = 0;
+assign dp = 1;
 assign {an3,an2,an1,an0} = ~dispEn;
 
 initial
