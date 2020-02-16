@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Feb 13 23:02:01 2020
+| Date         : Sun Feb 16 16:29:47 2020
 | Host         : LAPTOP-GNB4P8IU running 64-bit major release  (build 9200)
 | Command      : report_methodology -file system_methodology_drc_routed.rpt -pb system_methodology_drc_routed.pb -rpx system_methodology_drc_routed.rpx
 | Design       : system
@@ -126,82 +126,82 @@ Related violations: <none>
 
 TIMING-17#19 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[0].sp/dff1/q_reg/C is not reached by a timing clock
+The clock pin genblk2[0].dff1/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[0].sp/dff2/q_reg/C is not reached by a timing clock
+The clock pin genblk2[0].dff2/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[1].sp/dff1/q_reg/C is not reached by a timing clock
+The clock pin genblk2[1].dff1/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[1].sp/dff2/q_reg/C is not reached by a timing clock
+The clock pin genblk2[1].dff2/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[2].sp/dff1/q_reg/C is not reached by a timing clock
+The clock pin genblk2[2].dff1/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[2].sp/dff2/q_reg/C is not reached by a timing clock
+The clock pin genblk2[2].dff2/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[3].sp/dff1/q_reg/C is not reached by a timing clock
+The clock pin genblk2[3].dff1/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[3].sp/dff2/q_reg/C is not reached by a timing clock
+The clock pin genblk2[3].dff2/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[4].sp/dff1/q_reg/C is not reached by a timing clock
+The clock pin genblk2[4].dff1/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[4].sp/dff2/q_reg/C is not reached by a timing clock
+The clock pin genblk2[4].dff2/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[5].sp/dff1/q_reg/C is not reached by a timing clock
+The clock pin genblk2[5].dff1/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[5].sp/dff2/q_reg/C is not reached by a timing clock
+The clock pin genblk2[5].dff2/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[6].sp/dff1/q_reg/C is not reached by a timing clock
+The clock pin genblk2[6].dff1/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[6].sp/dff2/q_reg/C is not reached by a timing clock
+The clock pin genblk2[6].dff2/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[7].sp/dff1/q_reg/C is not reached by a timing clock
+The clock pin genblk2[7].dff1/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Warning
 Non-clocked sequential cell  
-The clock pin genblk2[7].sp/dff2/q_reg/C is not reached by a timing clock
+The clock pin genblk2[7].dff2/q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#35 Warning

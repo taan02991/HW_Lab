@@ -49,9 +49,9 @@ clkDiv fdivTarget(targetClk, tclk[18]);
 
 //Synchronize and Single Pulse
 generate for(c=0; c<8; c=c+1) begin
-    dFlipFlop dff1(w1[c], clk, sw[c]);
-    dFlipFlop dff2(w2[c], clk, w1[c]);
-    singlePulser sp(swD[c], w2[c], tclk[9]);
+    dFlipFlop dff1(w1[c], targetClk, sw[c]);
+    dFlipFlop dff2(w2[c], targetClk, w1[c]);
+    singlePulser sp(swD[c], w2[c], clk);
 end endgenerate
 
 // 4-digit BCD Counter
