@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun Feb 16 16:29:16 2020
+| Date         : Sun Feb 16 20:47:35 2020
 | Host         : LAPTOP-GNB4P8IU running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
 | Design       : system
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    26 |
-| Unused register locations in slices containing registers |   169 |
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |   177 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,7 +34,8 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      1 |           20 |
+|      1 |           21 |
+|      3 |            1 |
 |      4 |            4 |
 |    16+ |            2 |
 +--------+--------------+
@@ -46,7 +47,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              63 |           34 |
+| No           | No                    | No                     |              71 |           38 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |              16 |            8 |
@@ -61,32 +62,34 @@ Table of Contents
 +--------------------------------+--------------------+------------------+------------------+----------------+
 |          Clock Signal          |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +--------------------------------+--------------------+------------------+------------------+----------------+
-|  oxxx/cout_reg_0               |                    |                  |                1 |              1 |
-|  oxxx/bout_reg_1               |                    |                  |                1 |              1 |
 |  genblk1[0].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
-|  genblk1[3].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
-|  genblk1[6].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
-|  genblk1[7].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
-|  genblk1[2].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
 |  genblk1[10].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
-|  genblk1[5].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
-|  genblk1[4].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
-|  genblk1[8].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
 |  genblk1[11].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
-|  genblk1[9].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
-|  genblk1[13].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
-|  genblk1[14].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
-|  genblk1[12].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
-|  genblk1[17].fdiv/clkDiv       |                    |                  |                1 |              1 |
-|  genblk1[16].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
-|  genblk1[15].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[20].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[21].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[2].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
 |  genblk1[1].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
-|  clk_IBUF_BUFG                 | genblk2[0].sp/E[0] |                  |                2 |              4 |
-|  clk_IBUF_BUFG                 | genblk2[2].sp/E[0] |                  |                2 |              4 |
-|  clk_IBUF_BUFG                 | genblk2[6].sp/E[0] |                  |                2 |              4 |
-|  clk_IBUF_BUFG                 | genblk2[4].sp/E[0] |                  |                2 |              4 |
-|  fdivTarget/CLK                |                    |                  |                4 |             18 |
-|  clk_IBUF_BUFG                 |                    |                  |               10 |             25 |
+|  genblk1[3].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
+|  genblk1[9].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
+|  genblk1[4].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
+|  genblk1[5].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
+|  genblk1[8].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
+|  genblk1[7].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
+|  genblk1[12].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[6].fdiv/clkDiv_reg_0  |                    |                  |                1 |              1 |
+|  genblk1[15].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[14].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[13].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[16].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[17].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[19].fdiv/clkDiv_reg_0 |                    |                  |                1 |              1 |
+|  genblk1[18].fdiv/CLK          |                    |                  |                2 |              3 |
+|  tclk_23_BUFG                  | genblk2[0].sp/E[0] |                  |                2 |              4 |
+|  tclk_23_BUFG                  | genblk2[2].sp/E[0] |                  |                2 |              4 |
+|  tclk_23_BUFG                  | genblk2[4].sp/E[0] |                  |                2 |              4 |
+|  tclk_23_BUFG                  | genblk2[6].sp/E[0] |                  |                2 |              4 |
+|  tclk_23_BUFG                  |                    |                  |                8 |             22 |
+|  clk_IBUF_BUFG                 |                    |                  |                7 |             25 |
 +--------------------------------+--------------------+------------------+------------------+----------------+
 
 

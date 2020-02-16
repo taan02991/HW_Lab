@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Feb 16 16:27:43 2020
-# Process ID: 15140
+# Start of session at: Sun Feb 16 20:46:09 2020
+# Process ID: 9816
 # Current directory: C:/Users/User/XilinxProjects/Lab03/Lab03.runs/synth_1
 # Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
 # Log file: C:/Users/User/XilinxProjects/Lab03/Lab03.runs/synth_1/system.vds
@@ -15,7 +15,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12476 
+INFO: Helper process launched with PID 13716 
 WARNING: [Synth 8-2611] redeclaration of ansi port num is not allowed [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/BCDCounter.v:34]
 WARNING: [Synth 8-2611] redeclaration of ansi port cout is not allowed [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/BCDCounter.v:35]
 WARNING: [Synth 8-2611] redeclaration of ansi port bout is not allowed [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/BCDCounter.v:35]
@@ -24,7 +24,7 @@ WARNING: [Synth 8-2611] redeclaration of ansi port q is not allowed [C:/Users/Us
 WARNING: [Synth 8-2611] redeclaration of ansi port segments is not allowed [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/segmentDecoder.v:28]
 WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/singlePulser.v:34]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 375.637 ; gain = 113.801
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 375.125 ; gain = 113.621
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/system.v:23]
 INFO: [Synth 8-6157] synthesizing module 'clkDiv' [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/clkDiv.v:23]
@@ -45,11 +45,9 @@ WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity lis
 WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/quadSevenSeg.v:55]
 WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/quadSevenSeg.v:55]
 INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (6#1) [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/quadSevenSeg.v:23]
-WARNING: [Synth 8-567] referenced signal 'btnC' should be on the sensitivity list [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/system.v:69]
-WARNING: [Synth 8-567] referenced signal 'btnU' should be on the sensitivity list [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/system.v:69]
 INFO: [Synth 8-6155] done synthesizing module 'system' (7#1) [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/system.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 409.184 ; gain = 147.348
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 408.609 ; gain = 147.105
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -62,10 +60,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 409.184 ; gain = 147.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 408.609 ; gain = 147.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 409.184 ; gain = 147.348
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 408.609 ; gain = 147.105
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -76,30 +74,30 @@ Parsing XDC File [C:/Users/User/XilinxProjects/Lab03/Basys-3-Master.xdc]
 Finished Parsing XDC File [C:/Users/User/XilinxProjects/Lab03/Basys-3-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/User/XilinxProjects/Lab03/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 744.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 743.516 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 744.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 743.523 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 744.566 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 744.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 743.523 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 743.523 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 744.566 ; gain = 482.730
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 743.523 ; gain = 482.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 744.566 ; gain = 482.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 743.523 ; gain = 482.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 744.566 ; gain = 482.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 743.523 ; gain = 482.020
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'ps_reg' in module 'singlePulser'
 INFO: [Synth 8-5544] ROM "out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -112,10 +110,8 @@ INFO: [Synth 8-5544] ROM "ns0" won't be mapped to Block RAM because address size
                  iSTATE1 |                               10 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'ps_reg' using encoding 'sequential' in module 'singlePulser'
-WARNING: [Synth 8-327] inferring latch for variable 'set9_reg' [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/system.v:58]
-WARNING: [Synth 8-327] inferring latch for variable 'set0_reg' [C:/Users/User/XilinxProjects/Lab03/Lab03.srcs/sources_1/new/system.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 744.566 ; gain = 482.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 743.523 ; gain = 482.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -131,16 +127,16 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit       Adders := 8     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	                4 Bit    Registers := 4     
+	                4 Bit    Registers := 6     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 43    
+	                1 Bit    Registers := 47    
 +---Muxes : 
-	   5 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 6     
 	   4 Input      4 Bit        Muxes := 2     
 	   3 Input      2 Bit        Muxes := 8     
 	   2 Input      2 Bit        Muxes := 16    
 	   5 Input      1 Bit        Muxes := 12    
-	   3 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -150,12 +146,10 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module system 
 Detailed RTL Component Info : 
-+---Muxes : 
-	   3 Input      1 Bit        Muxes := 4     
-Module clkDiv 
-Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 2     
 Module BCDCounter 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -174,6 +168,10 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input      4 Bit        Muxes := 2     
+Module clkDiv 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module dFlipFlop 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -202,7 +200,7 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 WARNING: [Synth 8-3917] design system has port dp driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 744.566 ; gain = 482.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 743.523 ; gain = 482.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -214,13 +212,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 744.887 ; gain = 483.051
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 743.523 ; gain = 482.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 779.668 ; gain = 517.832
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 743.523 ; gain = 482.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -232,7 +230,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 783.699 ; gain = 521.863
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 776.590 ; gain = 515.086
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -256,7 +254,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 783.699 ; gain = 521.863
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 776.590 ; gain = 515.086
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -269,7 +267,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 783.699 ; gain = 521.863
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 776.590 ; gain = 515.086
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -281,25 +279,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 783.699 ; gain = 521.863
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 776.590 ; gain = 515.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 783.699 ; gain = 521.863
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 776.590 ; gain = 515.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 783.699 ; gain = 521.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 776.590 ; gain = 515.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 783.699 ; gain = 521.863
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 776.590 ; gain = 515.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -315,96 +313,96 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT1 |    20|
-|3     |LUT2 |     9|
-|4     |LUT3 |    25|
-|5     |LUT4 |    16|
-|6     |LUT5 |     4|
-|7     |LUT6 |    31|
-|8     |FDRE |    77|
-|9     |LD   |     2|
-|10    |IBUF |    11|
-|11    |OBUF |    12|
+|1     |BUFG |     2|
+|2     |LUT1 |    24|
+|3     |LUT2 |    11|
+|4     |LUT3 |    22|
+|5     |LUT4 |    29|
+|6     |LUT5 |     6|
+|7     |LUT6 |    23|
+|8     |FDRE |    87|
+|9     |IBUF |    11|
+|10    |OBUF |    12|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+---------------------+----------------+------+
 |      |Instance             |Module          |Cells |
 +------+---------------------+----------------+------+
-|1     |top                  |                |   208|
-|2     |  fdivTarget         |clkDiv          |     2|
-|3     |  \genblk1[0].fdiv   |clkDiv_0        |     2|
-|4     |  \genblk1[10].fdiv  |clkDiv_1        |     2|
-|5     |  \genblk1[11].fdiv  |clkDiv_2        |     2|
-|6     |  \genblk1[12].fdiv  |clkDiv_3        |     2|
-|7     |  \genblk1[13].fdiv  |clkDiv_4        |     2|
-|8     |  \genblk1[14].fdiv  |clkDiv_5        |     2|
-|9     |  \genblk1[15].fdiv  |clkDiv_6        |     2|
-|10    |  \genblk1[16].fdiv  |clkDiv_7        |     2|
-|11    |  \genblk1[17].fdiv  |clkDiv_8        |     2|
-|12    |  \genblk1[1].fdiv   |clkDiv_9        |     2|
-|13    |  \genblk1[2].fdiv   |clkDiv_10       |     2|
-|14    |  \genblk1[3].fdiv   |clkDiv_11       |     2|
-|15    |  \genblk1[4].fdiv   |clkDiv_12       |     2|
-|16    |  \genblk1[5].fdiv   |clkDiv_13       |     2|
-|17    |  \genblk1[6].fdiv   |clkDiv_14       |     2|
-|18    |  \genblk1[7].fdiv   |clkDiv_15       |     2|
-|19    |  \genblk1[8].fdiv   |clkDiv_16       |     2|
-|20    |  \genblk1[9].fdiv   |clkDiv_17       |     2|
-|21    |  \genblk2[0].dff1   |dFlipFlop       |     1|
-|22    |  \genblk2[0].dff2   |dFlipFlop_18    |     1|
-|23    |  \genblk2[0].sp     |singlePulser    |     6|
-|24    |  \genblk2[1].dff1   |dFlipFlop_19    |     1|
-|25    |  \genblk2[1].dff2   |dFlipFlop_20    |     1|
-|26    |  \genblk2[1].sp     |singlePulser_21 |     6|
-|27    |  \genblk2[2].dff1   |dFlipFlop_22    |     1|
-|28    |  \genblk2[2].dff2   |dFlipFlop_23    |     1|
-|29    |  \genblk2[2].sp     |singlePulser_24 |     5|
-|30    |  \genblk2[3].dff1   |dFlipFlop_25    |     1|
-|31    |  \genblk2[3].dff2   |dFlipFlop_26    |     1|
-|32    |  \genblk2[3].sp     |singlePulser_27 |     5|
-|33    |  \genblk2[4].dff1   |dFlipFlop_28    |     1|
-|34    |  \genblk2[4].dff2   |dFlipFlop_29    |     1|
-|35    |  \genblk2[4].sp     |singlePulser_30 |     5|
-|36    |  \genblk2[5].dff1   |dFlipFlop_31    |     1|
-|37    |  \genblk2[5].dff2   |dFlipFlop_32    |     1|
-|38    |  \genblk2[5].sp     |singlePulser_33 |     5|
-|39    |  \genblk2[6].dff1   |dFlipFlop_34    |     1|
-|40    |  \genblk2[6].dff2   |dFlipFlop_35    |     1|
-|41    |  \genblk2[6].sp     |singlePulser_36 |     5|
-|42    |  \genblk2[7].dff1   |dFlipFlop_37    |     1|
-|43    |  \genblk2[7].dff2   |dFlipFlop_38    |     1|
-|44    |  \genblk2[7].sp     |singlePulser_39 |     5|
-|45    |  oxxx               |BCDCounter      |    18|
-|46    |  q7seg              |quadSevenSeg    |    19|
-|47    |  xoxx               |BCDCounter_40   |    16|
-|48    |  xxox               |BCDCounter_41   |    17|
-|49    |  xxxo               |BCDCounter_42   |    16|
+|1     |top                  |                |   227|
+|2     |  \genblk1[0].fdiv   |clkDiv          |     2|
+|3     |  \genblk1[10].fdiv  |clkDiv_0        |     2|
+|4     |  \genblk1[11].fdiv  |clkDiv_1        |     2|
+|5     |  \genblk1[12].fdiv  |clkDiv_2        |     2|
+|6     |  \genblk1[13].fdiv  |clkDiv_3        |     2|
+|7     |  \genblk1[14].fdiv  |clkDiv_4        |     2|
+|8     |  \genblk1[15].fdiv  |clkDiv_5        |     2|
+|9     |  \genblk1[16].fdiv  |clkDiv_6        |     2|
+|10    |  \genblk1[17].fdiv  |clkDiv_7        |     2|
+|11    |  \genblk1[18].fdiv  |clkDiv_8        |     2|
+|12    |  \genblk1[19].fdiv  |clkDiv_9        |     2|
+|13    |  \genblk1[1].fdiv   |clkDiv_10       |     2|
+|14    |  \genblk1[20].fdiv  |clkDiv_11       |     2|
+|15    |  \genblk1[21].fdiv  |clkDiv_12       |     2|
+|16    |  \genblk1[22].fdiv  |clkDiv_13       |     2|
+|17    |  \genblk1[2].fdiv   |clkDiv_14       |     2|
+|18    |  \genblk1[3].fdiv   |clkDiv_15       |     2|
+|19    |  \genblk1[4].fdiv   |clkDiv_16       |     2|
+|20    |  \genblk1[5].fdiv   |clkDiv_17       |     2|
+|21    |  \genblk1[6].fdiv   |clkDiv_18       |     2|
+|22    |  \genblk1[7].fdiv   |clkDiv_19       |     2|
+|23    |  \genblk1[8].fdiv   |clkDiv_20       |     2|
+|24    |  \genblk1[9].fdiv   |clkDiv_21       |     2|
+|25    |  \genblk2[0].dff1   |dFlipFlop       |     1|
+|26    |  \genblk2[0].dff2   |dFlipFlop_22    |     1|
+|27    |  \genblk2[0].sp     |singlePulser    |     6|
+|28    |  \genblk2[1].dff1   |dFlipFlop_23    |     1|
+|29    |  \genblk2[1].dff2   |dFlipFlop_24    |     1|
+|30    |  \genblk2[1].sp     |singlePulser_25 |     5|
+|31    |  \genblk2[2].dff1   |dFlipFlop_26    |     1|
+|32    |  \genblk2[2].dff2   |dFlipFlop_27    |     1|
+|33    |  \genblk2[2].sp     |singlePulser_28 |     6|
+|34    |  \genblk2[3].dff1   |dFlipFlop_29    |     1|
+|35    |  \genblk2[3].dff2   |dFlipFlop_30    |     1|
+|36    |  \genblk2[3].sp     |singlePulser_31 |     5|
+|37    |  \genblk2[4].dff1   |dFlipFlop_32    |     1|
+|38    |  \genblk2[4].dff2   |dFlipFlop_33    |     1|
+|39    |  \genblk2[4].sp     |singlePulser_34 |     6|
+|40    |  \genblk2[5].dff1   |dFlipFlop_35    |     1|
+|41    |  \genblk2[5].dff2   |dFlipFlop_36    |     1|
+|42    |  \genblk2[5].sp     |singlePulser_37 |     5|
+|43    |  \genblk2[6].dff1   |dFlipFlop_38    |     1|
+|44    |  \genblk2[6].dff2   |dFlipFlop_39    |     1|
+|45    |  \genblk2[6].sp     |singlePulser_40 |     6|
+|46    |  \genblk2[7].dff1   |dFlipFlop_41    |     1|
+|47    |  \genblk2[7].dff2   |dFlipFlop_42    |     1|
+|48    |  \genblk2[7].sp     |singlePulser_43 |     5|
+|49    |  oxxx               |BCDCounter      |    16|
+|50    |  q7seg              |quadSevenSeg    |    19|
+|51    |  xoxx               |BCDCounter_44   |    16|
+|52    |  xxox               |BCDCounter_45   |    20|
+|53    |  xxxo               |BCDCounter_46   |    17|
 +------+---------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 783.699 ; gain = 521.863
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 776.590 ; gain = 515.086
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 783.699 ; gain = 186.480
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 783.699 ; gain = 521.863
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 776.590 ; gain = 180.172
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 776.590 ; gain = 515.086
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 783.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 776.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  LD => LDCE: 2 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 783.699 ; gain = 535.137
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 783.699 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 776.590 ; gain = 527.973
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 776.590 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/User/XilinxProjects/Lab03/Lab03.runs/synth_1/system.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Feb 16 16:28:32 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 16 20:46:52 2020...
