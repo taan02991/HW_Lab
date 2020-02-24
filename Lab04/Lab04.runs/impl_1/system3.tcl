@@ -65,7 +65,6 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -74,9 +73,9 @@ set rc [catch {
   set_property parent.project_path C:/Users/User/XilinxProjects/Lab04/Lab04.xpr [current_project]
   set_property ip_output_repo C:/Users/User/XilinxProjects/Lab04/Lab04.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/User/XilinxProjects/Lab04/Lab04.runs/synth_1/system2.dcp
-  read_xdc C:/Users/User/XilinxProjects/Lab04/Basys-3-Master.xdc
-  link_design -top system2 -part xc7a35tcpg236-1
+  add_files -quiet C:/Users/User/XilinxProjects/Lab04/Lab04.runs/synth_1/system3.dcp
+  read_xdc C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/constrs_1/imports/Lab04/Basys-3-Master.xdc
+  link_design -top system3 -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -92,8 +91,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force system2_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file system2_drc_opted.rpt -pb system2_drc_opted.pb -rpx system2_drc_opted.rpx"
+  write_checkpoint -force system3_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file system3_drc_opted.rpt -pb system3_drc_opted.pb -rpx system3_drc_opted.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -112,10 +111,10 @@ set rc [catch {
     implement_debug_core 
   } 
   place_design 
-  write_checkpoint -force system2_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file system2_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file system2_utilization_placed.rpt -pb system2_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file system2_control_sets_placed.rpt"
+  write_checkpoint -force system3_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file system3_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file system3_utilization_placed.rpt -pb system3_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file system3_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -131,19 +130,19 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force system2_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file system2_drc_routed.rpt -pb system2_drc_routed.pb -rpx system2_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file system2_methodology_drc_routed.rpt -pb system2_methodology_drc_routed.pb -rpx system2_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file system2_power_routed.rpt -pb system2_power_summary_routed.pb -rpx system2_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file system2_route_status.rpt -pb system2_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file system2_timing_summary_routed.rpt -pb system2_timing_summary_routed.pb -rpx system2_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file system2_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file system2_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file system2_bus_skew_routed.rpt -pb system2_bus_skew_routed.pb -rpx system2_bus_skew_routed.rpx"
+  write_checkpoint -force system3_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file system3_drc_routed.rpt -pb system3_drc_routed.pb -rpx system3_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file system3_methodology_drc_routed.rpt -pb system3_methodology_drc_routed.pb -rpx system3_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file system3_power_routed.rpt -pb system3_power_summary_routed.pb -rpx system3_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file system3_route_status.rpt -pb system3_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file system3_timing_summary_routed.rpt -pb system3_timing_summary_routed.pb -rpx system3_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file system3_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file system3_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file system3_bus_skew_routed.rpt -pb system3_bus_skew_routed.pb -rpx system3_bus_skew_routed.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force system2_routed_error.dcp
+  write_checkpoint -force system3_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -155,10 +154,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  catch { write_mem_info -force system2.mmi }
-  write_bitstream -force system2.bit 
-  catch {write_debug_probes -quiet -force system2}
-  catch {file copy -force system2.ltx debug_nets.ltx}
+  catch { write_mem_info -force system3.mmi }
+  write_bitstream -force system3.bit 
+  catch {write_debug_probes -quiet -force system3}
+  catch {file copy -force system3.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

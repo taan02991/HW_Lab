@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,9 +33,8 @@ read_verilog -library xil_defaultlib {
   C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/sources_1/new/clkDiv.v
   C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/sources_1/new/dFlipFlop.v
   C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/sources_1/new/quadSevenSeg.v
-  C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/sources_1/new/rom.v
   C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/sources_1/new/segmentDecoder.v
-  C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/sources_1/new/system2.v
+  C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/sources_1/new/system3.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -46,18 +44,18 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/User/XilinxProjects/Lab04/Basys-3-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/User/XilinxProjects/Lab04/Basys-3-Master.xdc]
+read_xdc C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/constrs_1/imports/Lab04/Basys-3-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/User/XilinxProjects/Lab04/Lab04.srcs/constrs_1/imports/Lab04/Basys-3-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top system2 -part xc7a35tcpg236-1
+synth_design -top system3 -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef system2.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file system2_utilization_synth.rpt -pb system2_utilization_synth.pb"
+write_checkpoint -force -noxdef system3.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file system3_utilization_synth.rpt -pb system3_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

@@ -1,10 +1,10 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Feb 23 22:06:00 2020
+| Date             : Mon Feb 24 12:22:21 2020
 | Host             : LAPTOP-GNB4P8IU running 64-bit major release  (build 9200)
-| Command          : report_power -file system2_power_routed.rpt -pb system2_power_summary_routed.pb -rpx system2_power_routed.rpx
-| Design           : system2
+| Command          : report_power -file system3_power_routed.rpt -pb system3_power_summary_routed.pb -rpx system3_power_routed.rpx
+| Design           : system3
 | Device           : xc7a35tcpg236-1
 | Design State     : routed
 | Grade            : commercial
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.098        |
+| Total On-Chip Power (W)  | 0.097        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.026        |
+| Dynamic (W)              | 0.025        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,14 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      128 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       30 |     20800 |            0.14 |
-|   Register     |    <0.001 |       31 |     41600 |            0.07 |
-|   Others       |     0.000 |       61 |       --- |             --- |
-| Signals        |    <0.001 |       53 |       --- |             --- |
-| I/O            |     0.025 |       18 |       106 |           16.98 |
+| Slice Logic    |    <0.001 |      271 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      121 |     20800 |            0.58 |
+|   Register     |    <0.001 |       39 |     41600 |            0.09 |
+|   F7/F8 Muxes  |    <0.001 |       28 |     32600 |            0.09 |
+|   Others       |     0.000 |       74 |       --- |             --- |
+| Signals        |     0.001 |      132 |       --- |             --- |
+| I/O            |     0.022 |       25 |       106 |           23.58 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.098 |          |           |                 |
+| Total          |     0.097 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |
-| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
+| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |
+| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
+| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,7 +140,7 @@ Table of Contents
 +---------+-----------+
 | Name    | Power (W) |
 +---------+-----------+
-| system2 |     0.026 |
+| system3 |     0.025 |
 +---------+-----------+
 
 
