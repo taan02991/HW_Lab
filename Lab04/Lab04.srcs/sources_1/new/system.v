@@ -67,6 +67,6 @@ stack st(data, top, btnDebounce[0], btnDebounce[1], btnDebounce[2], tclk[23]);
 
 // 7-segments display
 
-quadSevenSeg q7seg(seg,dp,an0,an1,an2,an3,top[3:0],top[7:4],data[3:0],data[7:4],tclk[19]);
+quadSevenSeg q7seg(seg,dp,an0,an1,an2,an3,top[3:0],top[7:4],data[3:0],data[7:4],tclk[10]);
 
 endmodule

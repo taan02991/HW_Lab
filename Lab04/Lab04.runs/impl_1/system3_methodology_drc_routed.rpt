@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Feb 24 12:22:20 2020
+| Date         : Mon Feb 24 14:22:26 2020
 | Host         : LAPTOP-GNB4P8IU running 64-bit major release  (build 9200)
 | Command      : report_methodology -file system3_methodology_drc_routed.rpt -pb system3_methodology_drc_routed.pb -rpx system3_methodology_drc_routed.rpx
 | Design       : system3

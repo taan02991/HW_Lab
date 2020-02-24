@@ -30,13 +30,13 @@ module stack(
     );
 
 reg[7:0] mem[255:0];
-reg[7:0] top;
+reg[7:0] top, dpop;
 
 initial begin
     top = 0;
 end
 
-assign data = push?8'bz:mem[top-1];
+assign data = push?8'bz:dpop;
 
 always @(posedge clk) begin
     casex({push, pop, reset})
@@ -50,6 +50,7 @@ always @(posedge clk) begin
         3'b010: begin
             if(top > 0) begin
                 top = top - 1;
+                dpop = mem[top];
             end
         end
     endcase

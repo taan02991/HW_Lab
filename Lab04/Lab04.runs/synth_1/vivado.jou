@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Feb 24 12:20:29 2020
-# Process ID: 8392
+# Start of session at: Mon Feb 24 14:20:56 2020
+# Process ID: 14792
 # Current directory: C:/Users/User/XilinxProjects/Lab04/Lab04.runs/synth_1
 # Command line: vivado.exe -log system3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system3.tcl
 # Log file: C:/Users/User/XilinxProjects/Lab04/Lab04.runs/synth_1/system3.vds
